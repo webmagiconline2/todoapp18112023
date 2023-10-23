@@ -22,7 +22,7 @@ app.get('/tasks', (req, res) => {
 app.post('/tasks', (req, res) => {
   const task = req.body.task;
   tasks.push(task);
-  res.json({ message: 'Task was added successfully' });
+  res.json({ message: 'New task was added successfully' });
 });
 
 // Start server
